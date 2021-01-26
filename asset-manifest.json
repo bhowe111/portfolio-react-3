@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./https://bhowe111.github.io/portfolio-react-3/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "./https://bhowe111.github.io/portfolio-react-3/static/js/main.81b752fa.chunk.js",
-    "main.js.map": "./https://bhowe111.github.io/portfolio-react-3/static/js/main.81b752fa.chunk.js.map",
-    "runtime-main.js": "./https://bhowe111.github.io/portfolio-react-3/static/js/runtime-main.6778e3d7.js",
-    "runtime-main.js.map": "./https://bhowe111.github.io/portfolio-react-3/static/js/runtime-main.6778e3d7.js.map",
-    "static/js/2.3d19722c.chunk.js": "./https://bhowe111.github.io/portfolio-react-3/static/js/2.3d19722c.chunk.js",
-    "static/js/2.3d19722c.chunk.js.map": "./https://bhowe111.github.io/portfolio-react-3/static/js/2.3d19722c.chunk.js.map",
-    "static/js/3.e948f5f5.chunk.js": "./https://bhowe111.github.io/portfolio-react-3/static/js/3.e948f5f5.chunk.js",
-    "static/js/3.e948f5f5.chunk.js.map": "./https://bhowe111.github.io/portfolio-react-3/static/js/3.e948f5f5.chunk.js.map",
-    "index.html": "./https://bhowe111.github.io/portfolio-react-3/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "./https://bhowe111.github.io/portfolio-react-3/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.3d19722c.chunk.js.LICENSE.txt": "./https://bhowe111.github.io/portfolio-react-3/static/js/2.3d19722c.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "./https://bhowe111.github.io/portfolio-react-3/static/media/logo.6ce24c58.svg"
+    "main.css": "./static/css/main.8c8b27cf.chunk.css",
+    "main.js": "./static/js/main.81b752fa.chunk.js",
+    "main.js.map": "./static/js/main.81b752fa.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.592737e5.js",
+    "runtime-main.js.map": "./static/js/runtime-main.592737e5.js.map",
+    "static/js/2.3d19722c.chunk.js": "./static/js/2.3d19722c.chunk.js",
+    "static/js/2.3d19722c.chunk.js.map": "./static/js/2.3d19722c.chunk.js.map",
+    "static/js/3.e948f5f5.chunk.js": "./static/js/3.e948f5f5.chunk.js",
+    "static/js/3.e948f5f5.chunk.js.map": "./static/js/3.e948f5f5.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "./static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.3d19722c.chunk.js.LICENSE.txt": "./static/js/2.3d19722c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "./static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6778e3d7.js",
+    "static/js/runtime-main.592737e5.js",
     "static/js/2.3d19722c.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.81b752fa.chunk.js"

@@ -1,7 +1,16 @@
+import React from "react";
+
+import Header from "./components/Header";
+import Landing from "./pages/Landing";
+
 function App() {
   return (
-    <div>
-      <h1>testing final</h1>
+    <div className="App">
+      <>
+        <Header />
+
+        <Landing />
+      </>
     </div>
   );
 }

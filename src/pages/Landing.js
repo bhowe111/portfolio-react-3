@@ -1,4 +1,7 @@
 import React from "react";
+import projectImgOne from "../images/geoquakes-thumbnail.png";
+import projectImgTwo from "../images/triptych-thumbnail.png";
+import projectImgThree from "../images/whatsapp-clone-thumbnail.png";
 
 export default function Landing() {
   return (
@@ -72,7 +75,7 @@ export default function Landing() {
               <div className="post">
                 <img
                   className="thumbnail"
-                  src="../images/geoquakes-thumbnail.png"
+                  src={projectImgOne}
                   alt="project one"
                 />
                 <div className="post-preview">
@@ -90,7 +93,7 @@ export default function Landing() {
               <div className="post">
                 <img
                   className="thumbnail"
-                  src="images/triptych-thumbnail.png"
+                  src={projectImgTwo}
                   alt="project two"
                 />
                 <div className="post-preview">
@@ -106,7 +109,7 @@ export default function Landing() {
               <div className="post">
                 <img
                   className="thumbnail"
-                  src="images/whatsapp-clone-thumbnail.png"
+                  src={projectImgThree}
                   alt="project three"
                 />
                 <div className="post-preview">

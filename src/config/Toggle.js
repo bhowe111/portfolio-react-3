@@ -1,46 +1,46 @@
 import React from "react";
 import { func, string } from "prop-types";
 import styled from "styled-components";
+import { ReactComponent as TogIcon } from "../images/circle-icon.svg";
 
 // Toggle Container
 const ToggleContainer = styled.button`
-  background: ${({ theme }) => theme.mainText};
+  background: "#c4c4c4";
   border: 1px solid ${({ theme }) => theme.toggleBorder};
+  border-radius: 30px;
   cursor: pointer;
   display: flex;
   font-size: 0.5rem;
   justify-content: space-between;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0.5rem;
   position: relative;
-  width: 4em;
-  height: 2rem;
-  border-radius: 2em;
-  transition: all ease .3s;
+  padding-left: 1px;
+  padding-top: 1.3px;
+  width: 60px;
+  height: 30px;
 
-    &:after, &:before {
-      position: relative;
-      display: block;
-      content: "";
-      with: 50%;
-      height: 100%;
-      transition: all .3s ease;
+  svg {
+    height: 26px;
+    width: auto;
+    transition: all 0.3s ease;
+
+    /* circle icon */
+    &:first-child {
+      transform: ${({ whiteTheme }) =>
+        whiteTheme ? "translateX(0)" : "translateX(30px)"};
     }
-
   }
-  
 `;
 
-// end Toggle Container
+/* end Toggle Container */
 
 const Toggle = ({ theme, toggleTheme }) => {
   const isWhite = theme === "white";
   return (
-    <ToggleContainer
-      whiteTheme={isWhite}
-      onClick={toggleTheme}
-    ></ToggleContainer>
+    <ToggleContainer whiteTheme={isWhite} onClick={toggleTheme}>
+      <TogIcon />
+    </ToggleContainer>
   );
 };
 

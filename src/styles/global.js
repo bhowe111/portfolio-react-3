@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   *,
-  *::after,
-  *::before {
+  *:after,
+  *:before {
     box-sizing: border-box;
   }
 
@@ -46,6 +46,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Work Sans", sans-serif;
     color: ${({ theme }) => theme.secondaryText};
     line-height: 1.5rem;
+    text-align: justify;
   }
 
   a {
@@ -55,6 +56,69 @@ export const GlobalStyles = createGlobalStyle`
   ul {
     list-style: none;
   }
+
+/* Buttons */
+  .btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    color: ${({ theme }) => theme.toggleBorder};
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 5px;
+    padding: 1em 2.3em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      outline: 0;
+    }
+  }
+
+  .test-btn {
+    border: 2px solid ${({ theme }) => theme.toggleBorder};
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: ${({ theme }) => theme.toggleBorder};
+    z-index: -1;
+    transition: width 350ms ease-in-out;
+  }
+  
+  &:hover {
+    color: ${({ theme }) => theme.mainColor};
+    &:after {
+      width: 110%;
+    }
+  }
+  }
+
+/* See More buttons */
+
+.see-more {
+  padding: .4em;
+
+}
+  
   h1 {
   font-size: 80px;
   margin-block-start: 10px;
@@ -332,16 +396,6 @@ export const GlobalStyles = createGlobalStyle`
   margin-left: 5px;
 }
 
-.navigation a {
-  color: ${({ theme }) => theme.mainText};
-  opacity: 0.7;
-}
-
-.navigation a:hover {
-  opacity: 1;
-  text-shadow: 2px 1.5px 0 ${({ theme }) => theme.previewShadow};
-}
-
 .change-theme {
   color: ${({ theme }) => theme.mainText};
 }
@@ -349,37 +403,6 @@ export const GlobalStyles = createGlobalStyle`
 
 /* ----------------------------- Themes */
 
-#theme-options-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.theme-dot {
-  height: 30px;
-  width: 30px;
-  background-color: #000;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: 300;
-
-  margin: 5px;
-  border: 1px solid ${({ theme }) => theme.borderColor};
-
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.79);
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.79);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.79);
-}
-
-.theme-dot:hover {
-  opacity: 1;
-}
-
-#light-mode {
-  background-color: #fff;
-}
-#gold-mode {
-  background-color: #ffd700;
-}
 
 /* ----------------------------- Preview */
 
@@ -413,7 +436,15 @@ export const GlobalStyles = createGlobalStyle`
   border-top: 1px solid ${({ theme }) => theme.borderColor};
 }
 
+/* ----------------------------- About */
+
+.about-text {
+    margin-inline-start: 15em;
+    margin-inline-end: 15em;
+  }
+
 /* ----------------------------- Projects */
+
 
 .post-wrapper {
   display: grid;

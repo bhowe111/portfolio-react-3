@@ -23,25 +23,26 @@ export default function Header() {
         </p>
         <ul className="navigation">
           <li>
-            <Toggle theme={theme} toggleTheme={toggleTheme} />
+            <Toggle
+              id="toggle"
+              type="checkbox"
+              className="checkbox"
+              theme={theme}
+              toggleTheme={toggleTheme}
+            />
+            <label htmlFor="toggle" className="switch"></label>
           </li>
         </ul>
 
         <ul className="navigation">
           <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/brendan-howe/">
-              <i className="fab fa-linkedin-in"></i>
+            <a className="btn test-btn" href="#about">
+              About
             </a>
           </li>
           <li>
-            <a href="https://github.com/bhowe111">
-              <i className="fab fa-github"></i>
+            <a className="btn test-btn" href="#projects">
+              Projects
             </a>
           </li>
         </ul>

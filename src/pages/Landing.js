@@ -24,7 +24,7 @@ export default function Landing() {
           <div id="about" className="about-wrapper">
             <div className="panel">
               <h2 style={{ textAlign: "center" }}>About Me</h2>
-              <p>
+              <p className="about-text">
                 I'm a front-end junior web developer. Experienced in gathering,
                 analyzing and compiling information from disparate resources
                 into engaging products. My background in the service industry,
@@ -32,7 +32,7 @@ export default function Landing() {
                 approach of doing more with less.
               </p>
               <br />
-              <p>
+              <p className="about-text">
                 I write, conduct, record and produce interviews with innovators
                 in business technology and the arts. I also play music and climb
                 rocks.
@@ -85,7 +85,9 @@ export default function Landing() {
                     Survey API to map the most recent earthquakes around the
                     globe.
                   </p>
-                  <a href="post.html">View Project</a>
+                  <a className="btn see-more" href="post.html">
+                    View Project
+                  </a>
                 </div>
               </div>
             </div>
@@ -101,7 +103,9 @@ export default function Landing() {
                   <p className="post-intro">
                     A full MERN stack customizable art gallery.
                   </p>
-                  <a href="post.html">View Project</a>
+                  <a className="btn see-more" href="post.html">
+                    View Project
+                  </a>
                 </div>
               </div>
             </div>
@@ -118,12 +122,19 @@ export default function Landing() {
                     A full MERN stack WhatsApp clone utilizing Pusher for
                     simultaneous front-end updates of back-end info.
                   </p>
-                  <a href="post.html">View Project</a>
+                  <a className="btn see-more" href="post.html">
+                    View Project
+                  </a>
                 </div>
               </div>
               <div className="navigation">
-                <a target="_blank" href="https://github.com/bhowe111">
-                  Check out more projects on GitHub
+                <a
+                  className="btn see-more"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/bhowe111"
+                >
+                  See more
                 </a>
               </div>
             </div>
@@ -131,9 +142,31 @@ export default function Landing() {
         </div>
       </section>
       <section className="s2">
-        <div className="panel">
-          <p style={{ textAlign: "center" }}>© Brendan Howe 2021</p>
-        </div>
+        <ul className="navigation" style={{ textAlign: "right" }}>
+          <li>
+            <a
+              className="btn test-btn"
+              href="https://www.linkedin.com/in/brendan-howe/"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a className="btn test-btn" href="https://github.com/bhowe111">
+              <i className="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: "small",
+              }}
+            >
+              © Brendan Howe 2021
+            </p>
+          </li>
+        </ul>
       </section>
     </div>
   );

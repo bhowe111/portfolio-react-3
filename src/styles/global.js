@@ -117,6 +117,10 @@ export const GlobalStyles = createGlobalStyle`
 .see-more {
   padding: .4em;
 
+  &:hover {
+    color: ${({ theme }) => theme.borderColor};
+  }
+
 }
   
   h1 {

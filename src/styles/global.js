@@ -7,6 +7,10 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   html,
   body {
     margin: 0;
@@ -14,8 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Raleway", sans-serif;
     width: 100%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-    transition: ease-in;
+    transition: .5s ease-in;
   }
 
   body * {
@@ -155,6 +158,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 2px;
+    scroll-behavior: smooth;
   }
 
   /* ----------------------------- Background Image */
@@ -403,10 +407,6 @@ export const GlobalStyles = createGlobalStyle`
 .change-theme {
   color: ${({ theme }) => theme.mainText};
 }
-
-
-/* ----------------------------- Themes */
-
 
 /* ----------------------------- Preview */
 

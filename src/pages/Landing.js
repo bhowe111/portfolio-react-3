@@ -39,7 +39,12 @@ export default function Landing() {
               </p>
               <h3 style={{ textAlign: "center" }}>Skills and Experience</h3>
               <p className="navigation" style={{ textAlign: "center" }}>
-                <a target="_blank" href="brendanhowe_resume.pdf">
+                <a
+                  style={{ justifyContent: "center" }}
+                  className="btn see-more"
+                  target="_blank"
+                  href="brendanhowe_resume.pdf"
+                >
                   Download Resume
                 </a>
               </p>

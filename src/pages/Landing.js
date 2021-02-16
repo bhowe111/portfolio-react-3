@@ -38,7 +38,10 @@ export default function Landing() {
                 rocks.
               </p>
               <h3 style={{ textAlign: "center" }}>Skills and Experience</h3>
-              <p className="navigation" style={{ textAlign: "center" }}>
+              <p
+                className="navigation"
+                style={{ textAlign: "center", marginRight: "0" }}
+              >
                 <a
                   style={{ justifyContent: "center" }}
                   className="btn see-more"
@@ -108,7 +111,12 @@ export default function Landing() {
                   <p className="post-intro">
                     A full MERN stack customizable art gallery.
                   </p>
-                  <a className="btn see-more" href="post.html">
+                  <a
+                    className="btn see-more"
+                    href="https://react-triptych-ii.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     View Project
                   </a>
                 </div>

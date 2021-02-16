@@ -113,9 +113,9 @@ export default function Landing() {
                   </p>
                   <a
                     className="btn see-more"
-                    href="https://react-triptych-ii.herokuapp.com/"
                     target="_blank"
                     rel="noreferrer"
+                    href="https://react-triptych-ii.herokuapp.com/"
                   >
                     View Project
                   </a>

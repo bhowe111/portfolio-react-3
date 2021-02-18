@@ -81,7 +81,7 @@ export const GlobalStyles = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: #fff;
+      color: ${({ theme }) => theme.borderColor};
       outline: 0;
     }
   }

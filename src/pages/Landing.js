@@ -1,4 +1,5 @@
 import React from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import projectImgOne from "../images/geoquakes-thumbnail.png";
 import projectImgTwo from "../images/triptych-thumbnail.png";
 import projectImgThree from "../images/whatsapp-clone-thumbnail.png";
@@ -15,7 +16,7 @@ export default function Landing() {
             <div>BRENDAN HOWE</div>
             <div>BRENDAN HOWE</div>
           </div>
-          <h2 className="subheading">Front-End Web Developer</h2>
+          <h2 className="subheading">Front-End / Full Stack Web Developer</h2>
         </div>
       </div>
       {/* Content */}
@@ -25,17 +26,31 @@ export default function Landing() {
             <div className="panel">
               <h2 style={{ textAlign: "center" }}>About Me</h2>
               <p className="about-text">
-                I'm a front-end junior web developer. Experienced in gathering,
-                analyzing and compiling information from disparate resources
-                into engaging products. My background in the service industry,
-                education and nonprofit radio informs my problem-solving
-                approach of doing more with less.
+                Hello there, I'm Brendan. Experienced in gathering, analyzing
+                and{" "}
+                <strong>
+                  compiling information from disparate resources into engaging
+                  products
+                </strong>
+                . My background in the service industry, education and nonprofit
+                radio informs my problem-solving approach of{" "}
+                <strong>doing more with less</strong>.
               </p>
               <br />
               <p className="about-text">
-                I write, conduct, record and produce interviews with innovators
-                in business technology and the arts. I also play music and climb
-                rocks.
+                My interests have shifted into <strong>green technology</strong>
+                . I am most interested in working with organizations actively
+                involved in projects to{" "}
+                <strong>
+                  make our social practices sustainable and equitable
+                </strong>
+                .
+              </p>
+              <br />
+              <p className="about-text">
+                I write, conduct, record, and produce interviews with innovators
+                in business technology and the arts. I also play folk rock and
+                go bouldering.
               </p>
               <h3 style={{ textAlign: "center" }}>Skills and Experience</h3>
               <p
@@ -155,6 +170,21 @@ export default function Landing() {
         </div>
       </section>
       <section className="s2">
+        <div id="publications" className="panel">
+          <h2 style={{ textAlign: "center" }}>Publications</h2>
+          <div className="post-wrapper">
+            <Splide>
+              <SplideSlide>
+                <img src="https://picsum.photos/200" alt="Image 1" />
+              </SplideSlide>
+              <SplideSlide>
+                <img src="https://picsum.photos/200" alt="Image 2" />
+              </SplideSlide>
+            </Splide>
+          </div>
+        </div>
+      </section>
+      <section className="s1">
         <ul className="navigation" style={{ textAlign: "right" }}>
           <li>
             <a

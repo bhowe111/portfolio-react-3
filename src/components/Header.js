@@ -7,7 +7,7 @@ import { GlobalStyles } from "../styles/global";
 
 export default function Header() {
   const [theme, toggleTheme, componentMounted] = useGoldMode();
-  const themeMode = theme === "white" ? whiteTheme : goldTheme;
+  // const themeMode = theme === "white" ? whiteTheme : goldTheme;
 
   if (!componentMounted) {
     return <div />;
@@ -43,6 +43,11 @@ export default function Header() {
           <li>
             <a className="btn test-btn" href="#projects">
               Projects
+            </a>
+          </li>
+          <li>
+            <a className="btn test-btn" href="#publications">
+              Publications
             </a>
           </li>
         </ul>

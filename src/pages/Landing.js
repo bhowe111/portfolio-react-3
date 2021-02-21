@@ -1,5 +1,5 @@
 import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Carousel from "../components/Carousel";
 import projectImgOne from "../images/geoquakes-thumbnail.png";
 import projectImgTwo from "../images/triptych-thumbnail.png";
 import projectImgThree from "../images/whatsapp-clone-thumbnail.png";
@@ -41,10 +41,7 @@ export default function Landing() {
                 My interests have shifted into <strong>green technology</strong>
                 . I am most interested in working with organizations actively
                 involved in projects to{" "}
-                <strong>
-                  make our social practices sustainable and equitable
-                </strong>
-                .
+                <strong>make societies sustainable and equitable</strong>.
               </p>
               <br />
               <p className="about-text">
@@ -169,21 +166,14 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <section className="s2">
-        <div id="publications" className="panel">
+      <div>
+        <section className="s2">
+          {/* <div id="publications" className="panel"> */}
           <h2 style={{ textAlign: "center" }}>Publications</h2>
-          <div className="post-wrapper">
-            <Splide>
-              <SplideSlide>
-                <img src="https://picsum.photos/200" alt="Image 1" />
-              </SplideSlide>
-              <SplideSlide>
-                <img src="https://picsum.photos/200" alt="Image 2" />
-              </SplideSlide>
-            </Splide>
-          </div>
-        </div>
-      </section>
+          <Carousel />
+          {/* </div> */}
+        </section>
+      </div>
       <section className="s1">
         <ul className="navigation" style={{ textAlign: "right" }}>
           <li>

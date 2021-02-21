@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import "./carousel.scss";
 
 export const GlobalStyles = createGlobalStyle`
   *,

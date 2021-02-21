@@ -61,9 +61,14 @@ const slidesReducer = (state, event) => {
 };
 
 function Slide({ slide, offset }) {
+  const active = offset === 0 ? true : null;
   return (
-    <div className="slide" style={{ "--offset": offset }}>
-      {slide.title}
+    <div
+      className="slide"
+      data-active={active}
+      style={{ "--offset": offset, backgroundImage: `url('${slide.image}')` }}
+    >
+      {slide.title} {offset}
     </div>
   );
 }
@@ -73,7 +78,6 @@ function Carousel() {
 
   return (
     <div className="slides">
-      <h3>Hello world {state.slideIndex}</h3>
       {slides.map((slide, i) => {
         return <Slide slide={slide} offset={state.slideIndex - i} />;
       })}

@@ -60,14 +60,22 @@ const slidesReducer = (state, event) => {
   }
 };
 
+function Slide({ slide, offset }) {
+  return (
+    <div className="slide" style={{ "--offset": offset }}>
+      {slide.title}
+    </div>
+  );
+}
+
 function Carousel() {
   const [state, dispatch] = React.useReducer(slidesReducer, initialState);
 
   return (
     <div className="slides">
       <h3>Hello world {state.slideIndex}</h3>
-      {slides.map((slide) => {
-        return <div className="slide">{slide.title}</div>;
+      {slides.map((slide, i) => {
+        return <Slide slide={slide} offset={state.slideIndex - i} />;
       })}
       <button onClick={() => dispatch({ type: "PREV" })}>Previous</button>
 

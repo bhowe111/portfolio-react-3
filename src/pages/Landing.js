@@ -168,7 +168,7 @@ export default function Landing() {
       </section>
       <div>
         <section className="s2">
-          {/* <div id="publications" className="panel"> */}
+          {/* <div className="carousel-container"> */}
           <h2 style={{ textAlign: "center" }}>Publications</h2>
           <Carousel />
           {/* </div> */}

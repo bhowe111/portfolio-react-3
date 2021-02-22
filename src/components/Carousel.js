@@ -40,6 +40,48 @@ const slides = [
   },
 ];
 
+function useTilt(active) {
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    if (!ref.current || !active) {
+      return;
+    }
+
+    const state = {
+      rect: undefined,
+      mouseX: undefined,
+      mouseY: undefined,
+    };
+
+    let el = ref.current;
+
+    const handleMouseMove = (e) => {
+      if (!el) {
+        return;
+      }
+      if (!state.rect) {
+        state.rect = el.getBoundingClientRect();
+      }
+      state.mouseX = e.clientX;
+      state.mouseY = e.clientY;
+      const px = (state.mouseX - state.rect.left) / state.rect.width;
+      const py = (state.mouseY - state.rect.top) / state.rect.height;
+
+      el.style.setProperty("--px", px);
+      el.style.setProperty("--py", py);
+    };
+
+    el.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      el.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [active]);
+
+  return ref;
+}
+
 const initialState = {
   slideIndex: 0,
 };
@@ -61,12 +103,18 @@ const slidesReducer = (state, event) => {
 };
 
 function Slide({ slide, offset }) {
+  const ref = useTilt();
   const active = offset === 0 ? true : null;
   return (
     <div
+      ref={active ? ref : null}
       className="slide"
       data-active={active}
-      style={{ "--offset": offset, backgroundImage: `url('${slide.image}')` }}
+      style={{
+        "--offset": offset,
+        "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1,
+        backgroundImage: `url('${slide.image}')`,
+      }}
     >
       {slide.title} {offset}
     </div>
@@ -81,7 +129,6 @@ function Carousel() {
       <button onClick={() => dispatch({ type: "PREV" })}>Previous</button>
       {[...slides, ...slides, ...slides].map((slide, i) => {
         let offset = slides.length + (state.slideIndex - i);
-        let slideCenter = Math.round(slides.length / 2);
         return <Slide slide={slide} offset={offset} />;
       })}
 

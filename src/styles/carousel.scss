@@ -5,8 +5,7 @@
 //   position: relative;
 // }
 
-// html,
-// body {
+// .carousel-container {
 //   height: 100%;
 //   width: 100%;
 //   margin: 0;
@@ -15,9 +14,9 @@
 // }
 
 // html {
-//   background: #151515;
+// background: #151515;
 //   color: #fff;
-//   overflow: hidden;
+// overflow: hidden;
 // }
 
 // body {
@@ -33,6 +32,9 @@
   > .slide {
     grid-area: 1 / -1;
   }
+
+  perspective: 600px;
+  // transform-style: preserve-3d;
 
   > button {
     appearance: none;
@@ -73,14 +75,19 @@
   background-size: cover;
   background-position: center center;
 
-  transform: translateX(calc(100% * var(--offset)));
+  --x: calc(var(--px) - 0.5);
 
-  // &[data-active] {
-  //   .slideContent > * {
-  //     transform: none;
-  //     opacity: 1;
-  //   }
-  // }
+  transform: translateX(calc(100% * var(--offset)))
+    rotateY(calc(-25deg * var(--dir)));
+
+  transition: transform 0.5s ease-in-out;
+
+  &[data-active] {
+    .slideContent > * {
+      transform: rotateeX(calc(--x * 45deg));
+      opacity: 1;
+    }
+  }
 }
 
 // // .slideContent {

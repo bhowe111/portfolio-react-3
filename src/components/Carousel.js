@@ -4,39 +4,46 @@ console.clear();
 
 const slides = [
   {
-    title: "Machu Picchu",
-    subtitle: "Peru",
-    description: "Adventure is never far away",
+    title: "Duo Noire",
+    subtitle: "Night Triptych interview",
+    description:
+      "Album release interview for Chamber  Music Magazine, all pieces by female composers",
     image:
-      "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://images.squarespace-cdn.com/content/v1/55c8a213e4b08793bdd1dc40/1526235968963-UJ1EHBY3Z37Z5PXU3H0V/ke17ZwdGBToddI8pDm48kEYgnIkz7dwsOdoAu8gcW3J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmGHgEVW2Xh-yUJXyO3Z6YHF0oYaG8J8uu5y1ssKQNlUNPe3Sb49j6qnZmO9hPRrEr/Chamber+Music+America+Duo+Noire+Feature+Article.png?format=750w",
+    link: "https://duonoire.com",
   },
   {
-    title: "Chamonix",
-    subtitle: "France",
-    description: "Let your dreams come true",
+    title: "Third Angle Music",
+    subtitle: "Portland",
+    description: "Contemporary Music Cooperative",
     image:
-      "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://images.squarespace-cdn.com/content/v1/5b09f06cf8370ad65113b318/1527538837439-2ZL8DVUSMGWVWK2UBU78/ke17ZwdGBToddI8pDm48kICndz-T9Ge4MSoSGE8R8LNZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHbgp9B9pBhRilCWoxHw6g8E3P16rrsK_yi50qfqtBQmO87Nsj43NRAr6WuWZv5DKs/CMM.jpeg?format=500w",
+    link:
+      "https://static1.squarespace.com/static/5b09f06cf8370ad65113b318/t/5b0c64ec0e2e723b7480f23b/1527538930612/CMmagazine_profile.pdf",
   },
   {
-    title: "Mimisa Rocks",
-    subtitle: "Australia",
-    description: "A piece of heaven",
+    title: "Yuval Sharon Opera",
+    subtitle: "Los Angeles",
+    description: "An opera in 26 cars",
     image:
-      "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://van-magazine.com/wp-content/uploads/sites/2/2017/03/umbau_us_44-380x230.jpg",
+    link: "https://van-us.atavist.com/nonlinearity",
   },
   {
-    title: "Four",
-    subtitle: "Australia",
-    description: "A piece of heaven",
+    title: "Quantum Computing",
+    subtitle: "AI",
+    description: "Insight article for Logic 20/20",
     image:
-      "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://www.logic2020.com/media/k2/items/cache/42121f00ffc451d0c288e11c1f28cbd4_M.jpg",
+    link: "https://www.logic2020.com/insight/quantum-computing",
   },
   {
-    title: "Five",
-    subtitle: "Australia",
-    description: "A piece of heaven",
+    title: "Customer Experience Management",
+    subtitle: "Insights",
+    description: "Insight article for Logic 20/20",
     image:
-      "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://www.logic2020.com/media/k2/items/cache/1d73e13563b8be946c0f00bab252d7ea_M.jpg",
+    link: "https://www.logic2020.com/insight/customer-experience-management",
   },
 ];
 

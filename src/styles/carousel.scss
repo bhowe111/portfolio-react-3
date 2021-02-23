@@ -7,7 +7,8 @@
     grid-area: 1 / -1;
   }
 
-  perspective: 600px;
+  perspective: 700px;
+  min-height: 80vh;
 
   > button {
     appearance: none;
@@ -23,18 +24,12 @@
     &:hover {
       opacity: 1;
       cursor: pointer;
+      color: red;
     }
 
     &:focus {
       outline: none;
     }
-
-    // &:first-child {
-    //   left: -50%;
-    // }
-    // &:last-child {
-    //   right: 50%;
-    // }
   }
 }
 

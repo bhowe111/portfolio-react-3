@@ -87,13 +87,13 @@ const initialState = {
 };
 
 const slidesReducer = (state, event) => {
-  if (event.type === "NEXT") {
+  if (event.type === "PREV") {
     return {
       ...state,
       slideIndex: (state.slideIndex + 1) % slides.length,
     };
   }
-  if (event.type === "PREV") {
+  if (event.type === "NEXT") {
     return {
       ...state,
       slideIndex:
@@ -126,13 +126,13 @@ function Carousel() {
 
   return (
     <div className="slides">
-      <button onClick={() => dispatch({ type: "PREV" })}>Previous</button>
+      <button onClick={() => dispatch({ type: "NEXT" })}>Next</button>
       {[...slides, ...slides, ...slides].map((slide, i) => {
         let offset = slides.length + (state.slideIndex - i);
         return <Slide slide={slide} offset={offset} />;
       })}
 
-      <button onClick={() => dispatch({ type: "NEXT" })}>Next</button>
+      <button onClick={() => dispatch({ type: "PREV" })}>Previous</button>
     </div>
   );
 }

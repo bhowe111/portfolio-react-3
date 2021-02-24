@@ -1,4 +1,5 @@
 import React from "react";
+import RightArrow from "../images/rightarrow-nobg.png";
 
 console.clear();
 
@@ -123,7 +124,14 @@ function Slide({ slide, offset }) {
         backgroundImage: `url('${slide.image}')`,
       }}
     >
-      {slide.title} {offset}
+      <a
+        className="slide-link"
+        target="_blank"
+        rel="noreferrer"
+        href={slide.link}
+      >
+        <img src={RightArrow} alt="view  page" style={{ maxHeight: "50px" }} />
+      </a>
     </div>
   );
 }

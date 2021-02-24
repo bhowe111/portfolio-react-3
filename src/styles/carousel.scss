@@ -24,7 +24,6 @@
     &:hover {
       opacity: 1;
       cursor: pointer;
-      color: red;
     }
 
     &:focus {
@@ -40,6 +39,9 @@
   height: 50vh;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 
   transform: translateX(calc(100% * var(--offset)))
     rotateY(calc(-25deg * var(--dir)));
@@ -58,7 +60,22 @@
   --y: calc(var(--py) - 0.5);
 
   &:hover {
-    transition: none;
+    transition: ease-in-out 0.3s;
     transform: rotateY(calc(var(--x) * 45deg));
+  }
+}
+
+.slide-link {
+  height: 25%;
+  right: 0px;
+  bottom: 80px;
+  > a {
+    transition: 0.3s ease-in-out;
+    > img {
+      max-height: 50px;
+      &:hover {
+        max-height: 60px;
+      }
+    }
   }
 }

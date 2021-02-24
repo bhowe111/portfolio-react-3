@@ -3,12 +3,13 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 15px;
   > .slide {
     grid-area: 1 / -1;
   }
 
   perspective: 700px;
-  min-height: 80vh;
+  min-height: 70vh;
 
   > button {
     appearance: none;
@@ -44,7 +45,7 @@
   justify-content: center;
 
   transform: translateX(calc(100% * var(--offset)))
-    rotateY(calc(-25deg * var(--dir)));
+    rotateY(calc(-20deg * var(--dir)));
 
   transition: transform 0.5s ease-in-out;
 
@@ -56,8 +57,8 @@
 }
 
 .slide[data-active] {
-  --x: calc(var(--px) - 0.5);
-  --y: calc(var(--py) - 0.5);
+  // --x: calc(var(--px) - 0.5);
+  // --y: calc(var(--py) - 0.5);
 
   &:hover {
     transition: ease-in-out 0.3s;

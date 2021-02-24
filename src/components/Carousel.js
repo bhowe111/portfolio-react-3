@@ -141,13 +141,13 @@ function Carousel() {
 
   return (
     <div className="slides">
-      <button onClick={() => dispatch({ type: "NEXT" })}>Next</button>
+      <button onClick={() => dispatch({ type: "NEXT" })}>NEXT</button>
       {[...slides, ...slides, ...slides].map((slide, i) => {
         let offset = slides.length + (state.slideIndex - i);
         return <Slide slide={slide} offset={offset} />;
       })}
 
-      <button onClick={() => dispatch({ type: "PREV" })}>Previous</button>
+      <button onClick={() => dispatch({ type: "PREV" })}>PREV</button>
     </div>
   );
 }

@@ -1,5 +1,6 @@
+// Study and mod of @keyframers codepen https://codepen.io/bhowe111/pen/mdOMMWO
+
 import React from "react";
-import RightArrow from "../images/rightarrow-nobg.png";
 
 console.clear();
 
@@ -11,7 +12,8 @@ const slides = [
       "Album release interview for Chamber  Music Magazine, all pieces by female composers",
     image:
       "https://images.squarespace-cdn.com/content/v1/55c8a213e4b08793bdd1dc40/1526235968963-UJ1EHBY3Z37Z5PXU3H0V/ke17ZwdGBToddI8pDm48kEYgnIkz7dwsOdoAu8gcW3J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmGHgEVW2Xh-yUJXyO3Z6YHF0oYaG8J8uu5y1ssKQNlUNPe3Sb49j6qnZmO9hPRrEr/Chamber+Music+America+Duo+Noire+Feature+Article.png?format=750w",
-    link: "https://duonoire.com",
+    link:
+      "https://images.squarespace-cdn.com/content/v1/55c8a213e4b08793bdd1dc40/1526235968963-UJ1EHBY3Z37Z5PXU3H0V/ke17ZwdGBToddI8pDm48kEYgnIkz7dwsOdoAu8gcW3J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmGHgEVW2Xh-yUJXyO3Z6YHF0oYaG8J8uu5y1ssKQNlUNPe3Sb49j6qnZmO9hPRrEr/Chamber+Music+America+Duo+Noire+Feature+Article.png?format=750w",
   },
   {
     title: "Third Angle Music",
@@ -130,7 +132,7 @@ function Slide({ slide, offset }) {
         rel="noreferrer"
         href={slide.link}
       >
-        <img src={RightArrow} alt="view  page" style={{ maxHeight: "50px" }} />
+        <p class="animated-word">View</p>
       </a>
     </div>
   );
@@ -141,23 +143,24 @@ function Carousel() {
 
   return (
     <div className="slides">
-      <button
-        style={{ color: `${({ theme }) => theme.mainText}` }}
-        onClick={() => dispatch({ type: "NEXT" })}
-      >
-        NEXT
-      </button>
       {[...slides, ...slides, ...slides].map((slide, i) => {
         let offset = slides.length + (state.slideIndex - i);
         return <Slide slide={slide} offset={offset} />;
       })}
-
-      <button
-        style={{ color: `${({ theme }) => theme.mainText}` }}
-        onClick={() => dispatch({ type: "PREV" })}
-      >
-        PREV
-      </button>
+      <div className="carousel-buttons">
+        <button
+          style={{ color: `${({ theme }) => theme.mainText}` }}
+          onClick={() => dispatch({ type: "PREV" })}
+        >
+          PREV
+        </button>
+        <button
+          style={{ color: `${({ theme }) => theme.mainText}` }}
+          onClick={() => dispatch({ type: "NEXT" })}
+        >
+          NEXT
+        </button>
+      </div>
     </div>
   );
 }

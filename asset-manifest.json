@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "./static/css/main.a606bf41.chunk.css",
-    "main.js": "./static/js/main.b7f043b8.chunk.js",
-    "main.js.map": "./static/js/main.b7f043b8.chunk.js.map",
+    "main.css": "./static/css/main.7eba7463.chunk.css",
+    "main.js": "./static/js/main.6ff6184f.chunk.js",
+    "main.js.map": "./static/js/main.6ff6184f.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.d34b6984.js",
     "runtime-main.js.map": "./static/js/runtime-main.d34b6984.js.map",
     "static/js/2.fdbcd478.chunk.js": "./static/js/2.fdbcd478.chunk.js",
     "static/js/2.fdbcd478.chunk.js.map": "./static/js/2.fdbcd478.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.a606bf41.chunk.css.map": "./static/css/main.a606bf41.chunk.css.map",
+    "static/css/main.7eba7463.chunk.css.map": "./static/css/main.7eba7463.chunk.css.map",
     "static/js/2.fdbcd478.chunk.js.LICENSE.txt": "./static/js/2.fdbcd478.chunk.js.LICENSE.txt",
     "static/media/ams-bkg-blur-color-grit.af79ecfd.jpg": "./static/media/ams-bkg-blur-color-grit.af79ecfd.jpg",
     "static/media/ams-bkg-blur-dark-hatch.2928ada2.png": "./static/media/ams-bkg-blur-dark-hatch.2928ada2.png",
     "static/media/circle-icon.12673b03.svg": "./static/media/circle-icon.12673b03.svg",
     "static/media/geoquakes-thumbnail.2c8c7ee9.png": "./static/media/geoquakes-thumbnail.2c8c7ee9.png",
-    "static/media/rightarrow-nobg.9cdbf09a.png": "./static/media/rightarrow-nobg.9cdbf09a.png",
     "static/media/triptych-thumbnail.3f68c51d.png": "./static/media/triptych-thumbnail.3f68c51d.png",
     "static/media/whatsapp-clone-thumbnail.44632e25.png": "./static/media/whatsapp-clone-thumbnail.44632e25.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d34b6984.js",
     "static/js/2.fdbcd478.chunk.js",
-    "static/css/main.a606bf41.chunk.css",
-    "static/js/main.b7f043b8.chunk.js"
+    "static/css/main.7eba7463.chunk.css",
+    "static/js/main.6ff6184f.chunk.js"
   ]
 }

@@ -50,7 +50,7 @@
   transition: transform 0.5s ease-in-out;
 
   &[data-active] {
-    transform: rotateX(calc(--x * 45deg));
+    // transform: rotateX(calc(--x * 45deg));
     opacity: 1;
     color: green;
   }

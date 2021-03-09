@@ -155,6 +155,8 @@ export default function Landing() {
                   </p>
                   <a
                     className="btn see-more"
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://6047c0ec433a710539ca1548--whatsapp-mern-frontend.netlify.app/"
                   >
                     View Project

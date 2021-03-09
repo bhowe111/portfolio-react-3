@@ -60,7 +60,7 @@ export default function Landing() {
                   target="_blank"
                   href="brendanhowe_resume.pdf"
                 >
-                  Download Resume
+                  View Resume
                 </a>
               </p>
               <div id="skills">
@@ -167,11 +167,9 @@ export default function Landing() {
         </div>
       </section>
       <div>
-        <section className="s2">
-          {/* <div className="carousel-container"> */}
+        <section id="publications" className="s2">
           <h2 style={{ textAlign: "center" }}>Publications</h2>
           <Carousel />
-          {/* </div> */}
         </section>
       </div>
       <section className="s1">

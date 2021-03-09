@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../components/Carousel";
-import projectImgOne from "../images/geoquakes-thumbnail.png";
+import projectImgOne from "../images/AnywhereElseSS.png";
 import projectImgTwo from "../images/triptych-thumbnail.png";
 import projectImgThree from "../images/whatsapp-clone-thumbnail.png";
 
@@ -58,11 +58,13 @@ export default function Landing() {
                   style={{ justifyContent: "center" }}
                   className="btn see-more"
                   target="_blank"
-                  href="brendanhowe_resume.pdf"
+                  rel="noreferrer"
+                  href="https://docs.google.com/document/d/e/2PACX-1vQW8-BZqQHcBqGfEZSRdvBGjPKByURqKj2CvMGzb_u7NegpiE2wbXpIkRtgeETmWxseDX114jQ1p00M/pub"
                 >
                   View Resume
                 </a>
               </p>
+
               <div id="skills">
                 <ul>
                   <li>Django</li>
@@ -99,13 +101,17 @@ export default function Landing() {
                   alt="project one"
                 />
                 <div className="post-preview">
-                  <h4 className="post-title">GeoQuakes</h4>
+                  <h4 className="post-title">Anywhere Else</h4>
                   <p className="post-intro">
-                    A React app that utilizes information the US Geological
-                    Survey API to map the most recent earthquakes around the
-                    globe.
+                    A Django travel app with Three.js designed to get you
+                    anywhere else.
                   </p>
-                  <a className="btn see-more" href="post.html">
+                  <a
+                    className="btn see-more"
+                    href="https://anywhere-else-app.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     View Project
                   </a>
                 </div>
@@ -147,7 +153,10 @@ export default function Landing() {
                     A full MERN stack WhatsApp clone utilizing Pusher for
                     simultaneous front-end updates of back-end info.
                   </p>
-                  <a className="btn see-more" href="post.html">
+                  <a
+                    className="btn see-more"
+                    href="https://6047c0ec433a710539ca1548--whatsapp-mern-frontend.netlify.app/"
+                  >
                     View Project
                   </a>
                 </div>

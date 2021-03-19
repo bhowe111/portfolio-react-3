@@ -5,7 +5,7 @@ import { ReactComponent as TogIcon } from "../images/circle-icon.svg";
 
 // Toggle Container
 const ToggleContainer = styled.button`
-  background: "#c4c4c4";
+  background-color: "#c4c4c4";
   border: 1px solid ${({ theme }) => theme.toggleBorder};
   border-radius: 30px;
   cursor: pointer;

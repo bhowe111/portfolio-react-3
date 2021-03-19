@@ -171,8 +171,8 @@ export const GlobalStyles = createGlobalStyle`
   align-items: center;
   justify-content: center;
   color: #fff;
-  text-shadow: 0 0 5px #000;
-  background: rgba(0, 0, 0, 0.118);
+  text-shadow: 3px 3px 4px #000;
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .parallax::after {
@@ -210,7 +210,8 @@ export const GlobalStyles = createGlobalStyle`
 .subheading {
   position: relative;
   justify-self: flex-end;
-  margin-top: 50px;
+  margin-top: 40px;
+  color: ${({ theme }) => theme.titleText}
 }
 /* Deconstructed text, modification of Ben Szabo codepen https://codepen.io/finnhvman/pen/BGmygj */
 
@@ -233,13 +234,13 @@ export const GlobalStyles = createGlobalStyle`
   right: 0;
   bottom: 0;
   pointer-events: none;
-  color: ${({ theme }) => theme.mainText};
+  color: ${({ theme }) => theme.titleText};
 }
 
 .deconstructed > div:nth-child(1) {
   -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
   mask-image: linear-gradient(black 25%, transparent 25%);
-  animation: deconstructed1 5s 1 forwards;
+  animation: deconstructed1 7s 1 forwards;
 }
 
 .deconstructed > div:nth-child(2) {
@@ -255,7 +256,7 @@ export const GlobalStyles = createGlobalStyle`
     black 50%,
     transparent 50%
   );
-  animation: deconstructed2 5s 1 forwards;
+  animation: deconstructed2 7s 1 forwards;
 }
 
 .deconstructed > div:nth-child(3) {
@@ -271,13 +272,13 @@ export const GlobalStyles = createGlobalStyle`
     black 75%,
     transparent 75%
   );
-  animation: deconstructed3 5s 1 forwards;
+  animation: deconstructed3 7s 1 forwards;
 }
 
 .deconstructed > div:nth-child(4) {
   -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
   mask-image: linear-gradient(transparent 75%, black 75%);
-  animation: deconstructed4 5s 1 forwards;
+  animation: deconstructed4 7s 1 forwards;
 }
 
 @keyframes deconstructed1 {
@@ -407,6 +408,10 @@ export const GlobalStyles = createGlobalStyle`
 
 .change-theme {
   color: ${({ theme }) => theme.mainText};
+}
+
+button {
+  background-color: ${({ theme }) => theme.borderColor}
 }
 
 /* ----------------------------- Preview */

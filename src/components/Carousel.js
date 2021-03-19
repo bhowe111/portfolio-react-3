@@ -149,13 +149,13 @@ function Carousel() {
       })}
       <div className="carousel-buttons">
         <button
-          style={{ color: `${({ theme }) => theme.mainText}` }}
+          style={{ color: "#ffffffa9" }}
           onClick={() => dispatch({ type: "PREV" })}
         >
           PREV
         </button>
         <button
-          style={{ color: `${({ theme }) => theme.mainText}` }}
+          style={{ color: "#ffffffa9" }}
           onClick={() => dispatch({ type: "NEXT" })}
         >
           NEXT

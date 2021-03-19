@@ -16,7 +16,7 @@ export default function Landing() {
             <div>BRENDAN HOWE</div>
             <div>BRENDAN HOWE</div>
           </div>
-          <h2 className="subheading">Front-End / Full Stack Web Developer</h2>
+          <h2 className="subheading">Full Stack Web Developer</h2>
         </div>
       </div>
       {/* Content */}

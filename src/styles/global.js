@@ -66,7 +66,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     appearance: none;
     background-color: transparent;
-    color: ${({ theme }) => theme.toggleBorder};
+    color: ${({ theme }) => theme.mainText};
     cursor: pointer;
     display: flex;
     align-self: center;
@@ -389,7 +389,7 @@ export const GlobalStyles = createGlobalStyle`
   position: fixed;
   z-index: 3;
   width: 100%;
-  min-height: 50px;
+  height: 70px;
 
   background-color: ${({ theme }) => theme.mainColor};
 }

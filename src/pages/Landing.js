@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "../components/Carousel";
+import CopyEmail from "../components/CopyEmail";
 import projectImgOne from "../images/AnywhereElseSS.png";
 import projectImgTwo from "../images/triptych-thumbnail.png";
 import projectImgThree from "../images/whatsapp-clone-thumbnail.png";
@@ -198,6 +199,9 @@ export default function Landing() {
               <i className="fab fa-github"></i>
             </a>
           </li>
+          {/* <li>
+            <CopyEmail />
+          </li> */}
           <li>
             <p
               style={{
